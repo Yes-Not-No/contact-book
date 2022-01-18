@@ -5,8 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    
+    <main class="content"> 
+        <section class="content__contacts contacts">
+            <div class="contacts__user-avatar-container">
+                <div class="contacts__user-avatar">
+                    <img src="./images/avatar.jpg" alt="Аватар">
+                </div>
+                <div class="contacts__name-container">
+                    <p class="contacts__name">Pavel Khokhlov</p>
+                </div>
+            </div>
+            <div class="contacts__contact-list-container">
+                <ul class="contacts__contact-list">
+                    
+                </ul>
+            </div>
+        </section>
+        <section class="content__editor editor">
+            <div class="editor__contact-name"></div>
+            <div class="editor__contact-info contact-info">
+                <label for="editor-phone-input">Phone:
+                    <input id="editor-phone-input" class="contact-info__phone" value="">
+                </label>
+                <label for="editor-email-input">E-mail:
+                    <input id="editor-email-input" class="contact-info__email" value="">
+                </label>
+                <label for="editor-company-input">Company:
+                    <input id="editor-company-input" class="contact-info__company" value="">
+                </label>
+                <label for="editor-website-input">Web:
+                    <input id="editor-website-input" class="contact-info__website" value="">
+                </label>
+            </div>
+            <button class="editor__close-button">X</button>
+            <button class="editor__save-button">Сохранить</button>
+        </section>
+    </main>
+    <template id="productrow">
+        <li class="contacts__contact-item contact-item">
+            <div class="contact-item__img-container">
+                <img src="./images/avatar.jpg" alt="fdew">
+            </div>
+            <div class="contact-item__name-container">
+                <p class="contact-item__name">Anastasiya Khokhlova</p>
+                <p class="contact-item__phone">8-999-999-99-99</p>
+            </div>
+        </li>
+    </template> 
+
+    <script src="./js/index.js" type="module"></script>
 </body>
 </html>
