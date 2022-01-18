@@ -21,10 +21,12 @@ body {
 .contacts {
     background-color: #ffffff;
     width: 25vw;
+    min-width: 320px;
     height: 100%;
     box-shadow: 0 0 4px #000000;
-    overflow: hidden;
     z-index: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .contacts__user-avatar {
@@ -85,6 +87,9 @@ body {
 
 .contacts__contact-list-container {
     overflow-y: scroll;
+    margin-top: 15px;
+    border-top: 1px solid #cdcdcd;
+    padding-top: 15px;
 }
 
 .contacts__contact-list {
@@ -94,8 +99,6 @@ body {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    padding-top: 30px;
-    overflow-y: scroll;
 }
 
 .contact-item {
@@ -104,6 +107,7 @@ body {
     display: flex;
     gap: 20px;
     // border: 1px solid #e5e5e5;
+    cursor: pointer;
 }
 
 .contact-item__img-container {
@@ -193,6 +197,20 @@ body {
     }
 }
 
+.editor__save-button {
+    width: 100px;
+    height: 50px;
+    margin-top: 50px;
+    background-color: #00693dce;
+    border: 1px solid #00693E;
+    color: #ffffff;
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: 2px 2px 10px #b8b8b8;
+    }
+}
+
 .editor__close-button {
     position: absolute;
     right: 50px;
@@ -205,4 +223,10 @@ body {
     justify-content: center;
     align-items: center;
     color: #ffffff;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: 2px 2px 10px #b8b8b8;
+    }
 }
