@@ -1,3 +1,2 @@
 
-import './contactsListRender.js';
-import './editUserName.js';
+import './app.js';
