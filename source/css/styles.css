@@ -25,10 +25,11 @@ body {
   z-index: 1;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .contacts__user-avatar {
-  height: 25vw;
+  height: 10vw;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -126,6 +127,23 @@ body {
   color: #a8a8a8;
 }
 
+.contacts__addNewContactButton {
+  position: absolute;
+  right: 30px;
+  bottom: 25px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #79c5f1;
+  color: #ffffff;
+  font-size: 30px;
+  cursor: pointer;
+  background-color: rgba(121, 197, 241, 0.3);
+}
+.contacts__addNewContactButton:hover {
+  background-color: #79c5f1;
+}
+
 .editor {
   background-color: #ffffff;
   flex-grow: 1;
@@ -189,13 +207,14 @@ body {
   width: 100px;
   height: 50px;
   margin-top: 50px;
-  background-color: #00693dce;
-  border: 1px solid #00693E;
-  color: #ffffff;
+  background-color: rgba(66, 163, 87, 0.3);
+  border: 1px solid #42a357;
+  color: #42a357;
   cursor: pointer;
 }
 .editor__save-button:hover {
-  box-shadow: 2px 2px 10px #b8b8b8;
+  background-color: #42a357;
+  color: #ffffff;
 }
 
 .editor__close-button {
@@ -204,15 +223,16 @@ body {
   top: 50px;
   width: 50px;
   height: 50px;
-  background-color: #c05a5a;
+  background-color: rgba(226, 54, 1, 0.3);
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #ffffff;
-  border: none;
+  color: #e23601;
+  border: 1px solid #e23601;
   cursor: pointer;
 }
 .editor__close-button:hover {
-  box-shadow: 2px 2px 10px #b8b8b8;
+  background-color: #e23601;
+  color: #ffffff;
 }
